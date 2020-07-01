@@ -1,3 +1,7 @@
+certificates/
+
+# Use yarn for manage dependencies
+package-lock.json
 
 # Created by https://www.toptal.com/developers/gitignore/api/node,visualstudiocode,linux,macos,windows,dotenv
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,visualstudiocode,linux,macos,windows,dotenv

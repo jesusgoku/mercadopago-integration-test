@@ -1,0 +1,23 @@
+{% extends "layouts/main.html" %}
+
+{% block body %}
+<div class="my-4">
+  <a href="{{  init_point }}" class="btn btn-primary btn-lg">Pagar en Mercado Pago</a>
+</div>
+
+<div class="my-4">
+  <form action="{{ paymentProcessUrl }}" method="POST">
+    <script src="https://www.mercadopago.cl/integrations/v1/web-payment-checkout.js" data-preference-id="{{ id }}"
+      data-button-label="Pagar en iFrame de Mercado Pago">
+    </script>
+  </form>
+</div>
+
+<div class="my-4">
+  <form action="{{ tokenizePaymentProcessUrl }}" method="POST">
+    <script src="https://www.mercadopago.cl/integrations/v1/web-tokenize-checkout.js" data-public-key="{{ publicKey }}"
+      data-transaction-amount="10000.00" data-button-label="Pagar en Modal">
+    </script>
+  </form>
+</div>
+{% endblock %}

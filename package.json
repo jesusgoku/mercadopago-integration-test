@@ -12,6 +12,10 @@
     "code:check:rules": "eslint --print-config .eslintrc.js | eslint-config-prettier-check"
   },
   "devDependencies": {
+    "@commitlint/cli": "^9.0.1",
+    "@commitlint/config-conventional": "^9.0.1",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
     "poetic": "^1.5.0"
   }
 }
